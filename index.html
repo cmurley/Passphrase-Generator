@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <script type="text/javascript" src="script.js"></script>
+    <body>
+        <header>
+            <h1>Passphrase Generator</h1>
+        </header>
+            <table class="customize">
+                <tr>
+                    <td></td>
+                    <td><h2 class="center">Options</h2></td>
+                    <td></td>
+                </tr>
+                <th>Add Word</th>
+                <th>Add Number</th>
+                <th>Add Symbol</th>
+                <tr>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox" id="3wrd" onclick="refresh();">
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox" id="numbers" onclick="refresh();">
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox" id="symbols" onclick="refresh();">
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button onclick="refresh();">
+                        <i class="fa fa-refresh fa-spin"></i> New Passphrase
+                    </button></td>
+                    <td></td>
+                </tr>
+            </table>
+        <br>
+        <div id="password">
+        </div>
+        <footer class="footer"></footer>
+    </body>
+</html>
